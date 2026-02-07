@@ -116,7 +116,7 @@
 			<div class="mt-8 flex flex-wrap items-center justify-center gap-4">
 				<Button href={TICKETS_URL} size="lg" external>Get Tickets</Button>
 				<Button href={CFS_URL} variant="secondary" size="lg" external>Call for Speakers</Button>
-				<Button href="mailto:{SPONSOR_EMAIL}" variant="outline" size="lg" class="border-brand-bg/30 text-brand-bg hover:bg-brand-bg hover:text-brand-black">Become a Sponsor</Button>
+				<Button href="mailto:{SPONSOR_EMAIL}" variant="outline" size="lg" class="border-brand-bg/30 text-brand-bg hover:bg-brand-bg hover:text-brand-black">Call for Sponsors</Button>
 			</div>
 		</div>
 	</Container>
@@ -344,7 +344,7 @@
 			<div class="mt-8 flex flex-wrap items-center justify-center gap-4">
 				<Button href={TICKETS_URL} size="lg" external>Get Tickets</Button>
 				<Button href={CFS_URL} variant="secondary" size="lg" external>Call for Speakers</Button>
-				<Button href="mailto:{SPONSOR_EMAIL}" variant="outline" size="lg" class="border-brand-bg/30 text-brand-bg hover:bg-brand-bg hover:text-brand-black">Become a Sponsor</Button>
+				<Button href="mailto:{SPONSOR_EMAIL}" variant="outline" size="lg" class="border-brand-bg/30 text-brand-bg hover:bg-brand-bg hover:text-brand-black">Call for Sponsors</Button>
 			</div>
 		</div>
 	</Container>
