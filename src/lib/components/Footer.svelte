@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import {
 		EVENT_NAME,
 		CONTACT_EMAIL,
@@ -10,11 +11,11 @@
 	import Container from './Container.svelte';
 
 	const footerNav = [
-		{ label: 'Home', href: '/' },
-		{ label: 'Tickets', href: '/tickets' },
-		{ label: 'Sponsors', href: '/sponsors' },
-		{ label: 'Venue', href: '/venue' },
-		{ label: 'Call for Speakers', href: '/call-for-speakers' }
+		{ label: 'Home', href: `${base}/` },
+		{ label: 'Tickets', href: `${base}/tickets` },
+		{ label: 'Sponsors', href: `${base}/sponsors` },
+		{ label: 'Venue', href: `${base}/venue` },
+		{ label: 'Call for Speakers', href: `${base}/call-for-speakers` }
 	];
 
 	const activeSocials = Object.entries(SOCIAL_LINKS).filter(([, url]) => url);
@@ -26,7 +27,7 @@
 			<!-- Column 1: About -->
 			<div>
 				<div class="flex items-center gap-2">
-					<img src="/Bee.png" alt="" class="h-8 w-8" aria-hidden="true" />
+					<img src="{base}/Bee.png" alt="" class="h-8 w-8" aria-hidden="true" />
 					<h3 class="text-lg font-bold text-brand-yellow">{EVENT_NAME}</h3>
 				</div>
 				<p class="mt-3 text-sm text-brand-bg/70">

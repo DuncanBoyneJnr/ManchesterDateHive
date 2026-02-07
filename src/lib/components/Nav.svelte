@@ -1,15 +1,16 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import { base } from '$app/paths';
 	import { EVENT_NAME, TICKETS_URL, CFS_URL } from '$lib/config/event';
 
 	let mobileOpen = $state(false);
 
 	const navItems = [
-		{ label: 'Home', href: '/' },
-		{ label: 'Tickets', href: '/tickets' },
-		{ label: 'Sponsors', href: '/sponsors' },
-		{ label: 'Venue', href: '/venue' },
-		{ label: 'Call for Speakers', href: '/call-for-speakers' }
+		{ label: 'Home', href: `${base}/` },
+		{ label: 'Tickets', href: `${base}/tickets` },
+		{ label: 'Sponsors', href: `${base}/sponsors` },
+		{ label: 'Venue', href: `${base}/venue` },
+		{ label: 'Call for Speakers', href: `${base}/call-for-speakers` }
 	];
 
 	function closeMobile() {
@@ -28,8 +29,8 @@
 >
 	<div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
 		<!-- Logo / Event name -->
-		<a href="/" class="flex items-center gap-2 text-lg font-bold text-brand-black hover:text-brand-yellow-hover">
-			<img src="/Bee.png" alt="" class="h-8 w-8" aria-hidden="true" />
+		<a href="{base}/" class="flex items-center gap-2 text-lg font-bold text-brand-black hover:text-brand-yellow-hover">
+			<img src="{base}/Bee.png" alt="" class="h-8 w-8" aria-hidden="true" />
 			<span class="hidden sm:inline">{EVENT_NAME}</span>
 		</a>
 

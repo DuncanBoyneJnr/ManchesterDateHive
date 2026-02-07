@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import {
 		EVENT_NAME,
 		TICKETS_URL,
@@ -100,7 +101,7 @@
 		<div class="text-center">
 			<p class="text-sm text-brand-bg/60">
 				We're committed to a safe and inclusive event. Our full
-				<a href="/code-of-conduct" class="text-brand-yellow underline hover:text-brand-yellow-hover">Code of Conduct</a>
+				<a href="{base}/code-of-conduct" class="text-brand-yellow underline hover:text-brand-yellow-hover">Code of Conduct</a>
 				will be published ahead of the event.
 			</p>
 		</div>

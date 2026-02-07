@@ -19,6 +19,7 @@
 		SEO_URL,
 		SEO_IMAGE
 	} from '$lib/config/event';
+	import { base } from '$app/paths';
 	import { speakers } from '$lib/data/speakers';
 	import { sponsors, tiers, tierOrder } from '$lib/data/sponsors';
 	import { agenda } from '$lib/data/agenda';
@@ -90,7 +91,7 @@
 <!-- ============ HERO ============ -->
 <section class="relative overflow-hidden bg-brand-black py-20 md:py-28">
 	<img
-		src="/Manchester.jpg"
+		src="{base}/Manchester.jpg"
 		alt=""
 		aria-hidden="true"
 		class="absolute inset-0 h-full w-full object-cover opacity-25"
@@ -98,7 +99,7 @@
 	<div class="absolute inset-0 bg-gradient-to-b from-brand-black/60 to-brand-black/90"></div>
 	<Container class="relative z-10">
 		<div class="mx-auto max-w-4xl text-center">
-			<img src="/MDH Logo.png" alt="Manchester Data Hive" class="mx-auto mb-6 h-40 w-auto drop-shadow-lg md:h-52" />
+			<img src="{base}/MDH Logo.png" alt="Manchester Data Hive" class="mx-auto mb-6 h-40 w-auto drop-shadow-lg md:h-52" />
 			<Badge variant="yellow" class="mb-6">{EVENT_DATE_TEXT}</Badge>
 			<h1 class="text-4xl font-extrabold leading-tight text-brand-bg md:text-6xl lg:text-7xl">
 				{EVENT_NAME}
@@ -154,7 +155,7 @@
 			{#each expectCards as card}
 				<Card>
 					<div class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-brand-yellow-light">
-						<img src="/Bee.png" alt="" aria-hidden="true" class="h-7 w-7" />
+						<img src="{base}/Bee.png" alt="" aria-hidden="true" class="h-7 w-7" />
 					</div>
 					<h3 class="text-xl font-bold text-brand-black">{card.title}</h3>
 					<p class="mt-2 text-sm text-brand-black/70">{card.description}</p>
@@ -278,8 +279,8 @@
 			</div>
 		{/if}
 		<div class="mt-8 flex flex-wrap items-center justify-center gap-4">
-			<Button href="/sponsors">View all packages</Button>
-			<Button href={SPONSORSHIP_PACK_URL} variant="outline" external>Download Sponsorship Pack</Button>
+			<Button href="{base}/sponsors">View all packages</Button>
+			<Button href="{base}{SPONSORSHIP_PACK_URL}" variant="outline" external>Download Sponsorship Pack</Button>
 		</div>
 	</Container>
 </section>
@@ -299,7 +300,7 @@
 						Easy to reach via Metrolink to MediaCityUK.
 					</p>
 					<div class="mt-6">
-						<Button href="/venue" variant="outline" size="sm">View full venue details</Button>
+						<Button href="{base}/venue" variant="outline" size="sm">View full venue details</Button>
 					</div>
 				</div>
 				<div class="overflow-hidden rounded-lg border border-brand-black/10">
@@ -333,7 +334,7 @@
 <section class="bg-brand-black py-16 md:py-20">
 	<Container>
 		<div class="mx-auto max-w-2xl text-center">
-			<img src="/MDH Logo.png" alt="Manchester Data Hive" class="mx-auto mb-4 h-28 w-auto" />
+			<img src="{base}/MDH Logo.png" alt="Manchester Data Hive" class="mx-auto mb-4 h-28 w-auto" />
 			<h2 class="text-3xl font-bold text-brand-bg md:text-4xl">
 				Ready to join the hive?
 			</h2>

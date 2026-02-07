@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
+	import { base } from '$app/paths';
 	import Container from './Container.svelte';
 
 	interface Props {
@@ -14,7 +15,7 @@
 <section class="bg-brand-black py-16 md:py-20">
 	<Container>
 		<div class="mx-auto max-w-3xl text-center">
-			<img src="/MDH Logo.png" alt="Manchester Data Hive" class="mx-auto mb-5 h-24 w-auto" />
+			<img src="{base}/MDH Logo.png" alt="Manchester Data Hive" class="mx-auto mb-5 h-24 w-auto" />
 			<h1 class="text-3xl font-bold text-brand-bg md:text-5xl">
 				{title}
 			</h1>

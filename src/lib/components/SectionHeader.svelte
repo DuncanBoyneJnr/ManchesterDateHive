@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	interface Props {
 		title: string;
 		subtitle?: string;
@@ -14,7 +16,7 @@
 	</h2>
 	<div class="mt-3 flex items-center gap-2 {centered ? 'justify-center' : ''}">
 		<div class="h-0.5 w-8 rounded-full bg-brand-yellow"></div>
-		<img src="/Bee.png" alt="" aria-hidden="true" class="h-6 w-6" />
+		<img src="{base}/Bee.png" alt="" aria-hidden="true" class="h-6 w-6" />
 		<div class="h-0.5 w-8 rounded-full bg-brand-yellow"></div>
 	</div>
 	{#if subtitle}

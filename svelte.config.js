@@ -17,13 +17,13 @@ const config = {
 		},
 		prerender: {
 			handleHttpError: ({ path, referrer, message }) => {
-				// Ignore missing image placeholders during prerender
-				if (path.endsWith('.png') || path.endsWith('.jpg')) {
+				// Ignore missing static asset placeholders during prerender
+				if (path.endsWith('.png') || path.endsWith('.jpg') || path.endsWith('.svg') || path.endsWith('.pdf')) {
 					console.warn(`Ignoring missing asset: ${path} (referenced from ${referrer})`);
 					return;
 				}
 				// Ignore code-of-conduct placeholder link
-				if (path === '/code-of-conduct') {
+				if (path.includes('/code-of-conduct')) {
 					return;
 				}
 				throw new Error(message);

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import {
 		EVENT_NAME,
 		SPONSOR_EMAIL,
@@ -30,7 +31,7 @@
 	subtitle="You're not just supporting an event — you're investing in the growth of an inclusive, innovative tech community."
 >
 	<Button href="mailto:{SPONSOR_EMAIL}" size="lg">Get in Touch</Button>
-	<Button href={SPONSORSHIP_PACK_URL} variant="secondary" size="lg" external>Download Sponsorship Pack</Button>
+	<Button href="{base}{SPONSORSHIP_PACK_URL}" variant="secondary" size="lg" external>Download Sponsorship Pack</Button>
 </PageHero>
 
 <!-- Why Sponsor -->
@@ -161,7 +162,7 @@
 <section class="bg-brand-black py-16">
 	<Container>
 		<div class="mx-auto max-w-2xl text-center">
-			<img src="/MDH Logo.png" alt="Manchester Data Hive" class="mx-auto mb-4 h-24 w-auto" />
+			<img src="{base}/MDH Logo.png" alt="Manchester Data Hive" class="mx-auto mb-4 h-24 w-auto" />
 			<h2 class="text-3xl font-bold text-brand-bg">Get in Touch</h2>
 			<p class="mt-4 text-brand-bg/70">
 				We'd love to discuss how you can take part and contribute to the buzz of Manchester Data Hive.
@@ -171,7 +172,7 @@
 			</p>
 			<div class="mt-6 flex flex-wrap items-center justify-center gap-4">
 				<Button href="mailto:{SPONSOR_EMAIL}" size="lg">Email Us</Button>
-				<Button href={SPONSORSHIP_PACK_URL} variant="secondary" size="lg" external>Download Sponsorship Pack</Button>
+				<Button href="{base}{SPONSORSHIP_PACK_URL}" variant="secondary" size="lg" external>Download Sponsorship Pack</Button>
 			</div>
 		</div>
 	</Container>

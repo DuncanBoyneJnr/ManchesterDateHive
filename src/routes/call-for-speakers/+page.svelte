@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import {
 		EVENT_NAME,
 		CFS_URL,
@@ -165,7 +166,7 @@
 <section class="bg-brand-black py-16">
 	<Container>
 		<div class="mx-auto max-w-2xl text-center">
-			<img src="/MDH Logo.png" alt="Manchester Data Hive" class="mx-auto mb-4 h-24 w-auto" />
+			<img src="{base}/MDH Logo.png" alt="Manchester Data Hive" class="mx-auto mb-4 h-24 w-auto" />
 			<h2 class="text-3xl font-bold text-brand-bg">First-time speaker?</h2>
 			<p class="mt-4 text-brand-bg/70">
 				We actively support first-time speakers. We'll pair you with a mentor who can help with your
