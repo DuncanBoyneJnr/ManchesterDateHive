@@ -114,9 +114,9 @@
 				📍 {EVENT_CITY}, {EVENT_COUNTRY} &middot; 📅 {EVENT_DATE_TEXT}
 			</p>
 			<div class="mt-8 flex flex-wrap items-center justify-center gap-4">
-				<Button href={TICKETS_URL} size="lg" external>Get Tickets</Button>
-				<Button href={CFS_URL} variant="secondary" size="lg" external>Call for Speakers</Button>
-				<Button href="mailto:{SPONSOR_EMAIL}" variant="outline" size="lg" class="border-brand-bg/30 text-brand-bg hover:bg-brand-bg hover:text-brand-black">Call for Sponsors</Button>
+				<Button href={TICKETS_URL} size="lg" class="min-w-[200px]" external>Get Tickets</Button>
+				<Button href={CFS_URL} variant="secondary" size="lg" class="min-w-[200px]" external>Call for Speakers</Button>
+				<Button href="mailto:{SPONSOR_EMAIL}" variant="outline" size="lg" class="min-w-[200px] !border-brand-bg/30 !text-brand-bg hover:!bg-brand-bg hover:!text-brand-black">Call for Sponsors</Button>
 			</div>
 		</div>
 	</Container>
@@ -165,75 +165,8 @@
 	</Container>
 </section>
 
-<!-- ============ AGENDA ============ -->
-<section class="py-16 md:py-20">
-	<Container>
-		<SectionHeader
-			title="Agenda"
-			subtitle="Here's what the day looks like. Sessions and timings may change."
-		/>
-		<div class="mx-auto max-w-3xl">
-			<div class="space-y-3">
-				{#each agenda as item}
-					<div
-						class="flex gap-4 rounded-lg border border-brand-black/10 bg-white p-4 transition-colors hover:border-brand-yellow/50"
-					>
-						<div class="w-16 shrink-0 text-right">
-							<span class="text-sm font-bold text-brand-black">{item.time}</span>
-						</div>
-						<div class="flex-1">
-							<div class="flex flex-wrap items-center gap-2">
-								<h3 class="font-semibold text-brand-black">{item.title}</h3>
-								{#if item.type}
-									<Badge variant={getAgendaTypeColor(item.type)}>{item.type}</Badge>
-								{/if}
-								{#if item.track}
-									<Badge variant="outline">{item.track}</Badge>
-								{/if}
-							</div>
-							<p class="mt-1 text-sm text-brand-black/60">{item.description}</p>
-							{#if item.speaker}
-								<p class="mt-1 text-sm font-medium text-brand-yellow-hover">{item.speaker}</p>
-							{/if}
-						</div>
-					</div>
-				{/each}
-			</div>
-		</div>
-	</Container>
-</section>
-
-<!-- ============ SPEAKERS ============ -->
-<section class="bg-white py-16 md:py-20">
-	<Container>
-		<SectionHeader
-			title="Speakers"
-			subtitle="Meet some of the people sharing their expertise on the day."
-		/>
-		<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-			{#each featuredSpeakers as speaker}
-				<Card>
-					<div
-						class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-brand-yellow-light text-2xl font-bold text-brand-black"
-					>
-						{speaker.name
-							.split(' ')
-							.map((n) => n[0])
-							.join('')}
-					</div>
-					<h3 class="text-center text-lg font-bold text-brand-black">{speaker.name}</h3>
-					<p class="text-center text-sm text-brand-black/60">{speaker.title}</p>
-					<p class="text-center text-sm text-brand-black/60">{speaker.company}</p>
-				</Card>
-			{/each}
-		</div>
-		<div class="mt-8 text-center">
-			<Button href={CFS_URL} variant="secondary" external>
-				Want to speak? Submit a talk
-			</Button>
-		</div>
-	</Container>
-</section>
+<!-- ============ AGENDA (hidden until confirmed) ============ -->
+<!-- ============ SPEAKERS (hidden until confirmed) ============ -->
 
 <!-- ============ SPONSORS ============ -->
 <section class="py-16 md:py-20">
@@ -342,9 +275,9 @@
 				Whether you want to attend, speak, or sponsor — there's a way for everyone to get involved.
 			</p>
 			<div class="mt-8 flex flex-wrap items-center justify-center gap-4">
-				<Button href={TICKETS_URL} size="lg" external>Get Tickets</Button>
-				<Button href={CFS_URL} variant="secondary" size="lg" external>Call for Speakers</Button>
-				<Button href="mailto:{SPONSOR_EMAIL}" variant="outline" size="lg" class="border-brand-bg/30 text-brand-bg hover:bg-brand-bg hover:text-brand-black">Call for Sponsors</Button>
+				<Button href={TICKETS_URL} size="lg" class="min-w-[200px]" external>Get Tickets</Button>
+				<Button href={CFS_URL} variant="secondary" size="lg" class="min-w-[200px]" external>Call for Speakers</Button>
+				<Button href="mailto:{SPONSOR_EMAIL}" variant="outline" size="lg" class="min-w-[200px] !border-brand-bg/30 !text-brand-bg hover:!bg-brand-bg hover:!text-brand-black">Call for Sponsors</Button>
 			</div>
 		</div>
 	</Container>
