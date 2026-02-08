@@ -36,4 +36,4 @@ export const SOCIAL_LINKS = {
 export const SEO_TITLE = `${EVENT_NAME} — ${EVENT_DATE_TEXT}`;
 export const SEO_DESCRIPTION = `Join us for ${EVENT_NAME}, a free one-day volunteer-led community event in ${EVENT_CITY} for data and AI professionals passionate about Microsoft Fabric, Azure SQL, Power BI and AI/Copilot technologies. ${EVENT_MISSION}`;
 export const SEO_URL = 'https://manchesterdatahive.co.uk';
-export const SEO_IMAGE = '/og-image.png';
+export const SEO_IMAGE = '/Sticker-MCRDH.png';
