@@ -162,7 +162,7 @@
 <section class="bg-brand-black py-16">
 	<Container>
 		<div class="mx-auto max-w-2xl text-center">
-			<img src="{base}/MDH Logo.png" alt="Manchester Data Hive" class="mx-auto mb-4 h-24 w-auto" />
+			<img src="{base}/MCRDH.png" alt="Manchester Data Hive" class="mx-auto mb-4 h-24 w-auto" />
 			<h2 class="text-3xl font-bold text-brand-bg">Get in Touch</h2>
 			<p class="mt-4 text-brand-bg/70">
 				We'd love to discuss how you can take part and contribute to the buzz of Manchester Data Hive.

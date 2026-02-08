@@ -99,7 +99,7 @@
 	<div class="absolute inset-0 bg-gradient-to-b from-brand-black/60 to-brand-black/90"></div>
 	<Container class="relative z-10">
 		<div class="mx-auto max-w-4xl text-center">
-			<img src="{base}/MCRDH.png" alt="Manchester Data Hive" class="mx-auto mb-6 h-40 w-auto drop-shadow-lg md:h-52" />
+			<img src="{base}/Sticker-MCRDH.png" alt="Manchester Data Hive" class="mx-auto mb-6 h-40 w-auto drop-shadow-lg md:h-52" />
 			<Badge variant="yellow" class="mb-6">{EVENT_DATE_TEXT}</Badge>
 			<h1 class="text-4xl font-extrabold leading-tight text-brand-bg md:text-6xl lg:text-7xl">
 				{EVENT_NAME}
