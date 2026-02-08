@@ -43,7 +43,7 @@
 			icon: '🤝',
 			title: 'Networking',
 			description:
-				'Connect with fellow data professionals, hiring managers, and community leaders in Manchester and beyond.'
+				'Connect with fellow data professionals and community leaders in a friendly, welcoming setting.'
 		},
 		{
 			icon: '🌍',

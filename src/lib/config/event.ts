@@ -17,10 +17,11 @@ export const EVENT_VENUE_MAP_EMBED = 'https://www.google.com/maps/embed?pb=!1m18
 
 // External links — update these with real URLs when ready
 export const TICKETS_URL = 'https://www.eventbrite.co.uk/e/placeholder';
-export const CFS_URL = 'https://sessionize.com/placeholder';
-export const SPONSOR_EMAIL = 'duncanboyne@hotmail.co.uk';
-export const SPONSOR_EMAIL_ALT = 'juliana@smart-frames.co.uk';
-export const CONTACT_EMAIL = 'duncanboyne@hotmail.co.uk';
+export const CFS_URL = 'https://sessionize.com/manchester-data-hive-data/';
+export const SPONSOR_EMAIL = 'manchesterdatahive@outlook.com';
+export const SPONSOR_EMAIL_ALT = '';
+export const SPONSOR_PHONE = '07956 217 652';
+export const CONTACT_EMAIL = 'manchesterdatahive@outlook.com';
 export const SPONSORSHIP_PACK_URL = '/Manchester Data Hive Sponsorship Pack.pdf';
 
 // Social links — leave empty string to hide

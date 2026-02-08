@@ -17,10 +17,8 @@
 	const benefits = [
 		'Full day of talks and sessions across data, analytics, and AI',
 		'Coffee, refreshments, and a full lunch included',
-		'Networking with hundreds of data professionals',
-		'Access to sponsor exhibits and demos',
-		'Community swag and giveaways',
-		'Post-event networking drinks'
+		'Networking with 100 data and AI professionals',
+		'Two parallel tracks to choose from throughout the day'
 	];
 </script>
 

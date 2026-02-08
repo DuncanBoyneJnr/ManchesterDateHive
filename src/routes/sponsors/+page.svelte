@@ -3,7 +3,7 @@
 	import {
 		EVENT_NAME,
 		SPONSOR_EMAIL,
-		SPONSOR_EMAIL_ALT,
+		SPONSOR_PHONE,
 		SPONSORSHIP_PACK_URL,
 		SEO_URL
 	} from '$lib/config/event';
@@ -168,7 +168,7 @@
 				We'd love to discuss how you can take part and contribute to the buzz of Manchester Data Hive.
 			</p>
 			<p class="mt-4 text-sm text-brand-bg/50">
-				{SPONSOR_EMAIL} &middot; {SPONSOR_EMAIL_ALT}
+				{SPONSOR_EMAIL} &middot; {SPONSOR_PHONE}
 			</p>
 			<div class="mt-6 flex flex-wrap items-center justify-center gap-4">
 				<Button href="mailto:{SPONSOR_EMAIL}" size="lg">Email Us</Button>
