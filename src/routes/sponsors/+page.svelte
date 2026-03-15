@@ -7,7 +7,7 @@
 		SPONSORSHIP_PACK_URL,
 		SEO_URL
 	} from '$lib/config/event';
-	import { sponsors, tiers, tierOrder } from '$lib/data/sponsors';
+	import { sponsors, tiers, tierOrder, mediaPartners } from '$lib/data/sponsors';
 
 	import Container from '$lib/components/Container.svelte';
 	import Button from '$lib/components/Button.svelte';
@@ -154,6 +154,37 @@
 					</div>
 				{/if}
 			{/each}
+		</Container>
+	</section>
+{/if}
+
+<!-- Community & Media Partners -->
+{#if mediaPartners.length > 0}
+	<section class="py-16 md:py-20">
+		<Container>
+			<SectionHeader title="Community & Media Partners" subtitle="Events and organisations we're proud to support." />
+			<div class="flex flex-wrap items-stretch justify-center gap-6">
+				{#each mediaPartners as partner}
+					<a
+						href={partner.url}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="flex max-w-sm flex-col items-center gap-4 rounded-xl border border-brand-black/10 bg-white p-6 text-center transition-shadow hover:shadow-md"
+						aria-label={partner.name}
+					>
+						<img
+							src="{base}{partner.logo}"
+							alt="{partner.name} logo"
+							class="h-16 w-auto object-contain"
+							onerror="this.style.display='none'"
+						/>
+						<div>
+							<p class="font-bold text-brand-black">{partner.name}</p>
+							<p class="mt-1 text-sm text-brand-black/70">{partner.description}</p>
+						</div>
+					</a>
+				{/each}
+			</div>
 		</Container>
 	</section>
 {/if}

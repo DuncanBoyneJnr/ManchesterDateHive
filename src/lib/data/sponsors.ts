@@ -112,6 +112,28 @@ export const tiers: Record<SponsorTier, TierInfo> = {
 	}
 };
 
+// ============================================================
+// MEDIA / COMMUNITY PARTNERS
+// Add community and media partners here. Logos go in /static/partners/.
+// ============================================================
+
+export interface MediaPartner {
+	name: string;
+	description: string;
+	logo: string; // path relative to /static, e.g. /partners/womentech.png
+	url: string;
+}
+
+export const mediaPartners: MediaPartner[] = [
+	{
+		name: 'WomenTech Network',
+		description:
+			'Women in Tech Global Conference 2026 — 7th annual edition, 12–15 May 2026. The largest virtual-first tech conference for women in tech and their allies, bringing together 100,000 attendees worldwide.',
+		logo: '/partners/womentech.jpeg',
+		url: 'https://www.womentech.net/women-tech-conference'
+	}
+];
+
 // Tier display order
 export const tierOrder: SponsorTier[] = [
 	'gold',
