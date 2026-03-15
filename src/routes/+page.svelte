@@ -239,7 +239,7 @@
 						src="{base}{partner.logo}"
 						alt="{partner.name} logo"
 						class="h-16 w-auto object-contain"
-						onerror="this.style.display='none'"
+						onerror={(e) => (e.currentTarget.style.display='none')}
 					/>
 					<div>
 						<p class="font-bold text-brand-black">{partner.name}</p>
