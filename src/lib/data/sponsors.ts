@@ -131,6 +131,13 @@ export const mediaPartners: MediaPartner[] = [
 			'Women in Tech Global Conference 2026 — 7th annual edition, 12–15 May 2026. The largest virtual-first tech conference for women in tech and their allies, bringing together 100,000 attendees worldwide.',
 		logo: '/partners/womentech.jpeg',
 		url: 'https://www.womentech.net/women-tech-conference'
+	},
+	{
+		name: 'Manchester Tech Week',
+		description:
+			'A city-wide celebration of technology, 27 April – 1 May 2026. Bringing together innovators, organisations, and the tech community for events, insight, and collaboration across Greater Manchester.',
+		logo: '/partners/manchester-tech-week.svg',
+		url: 'https://www.dtxevents.io/manchester-tech-week'
 	}
 ];
 
